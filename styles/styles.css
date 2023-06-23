@@ -1,9 +1,9 @@
 body {
-    background: grey;
+    background: #A2A2A2;
 }
 
 article {
-    background: white;
+    background: #FFFFFF;
 }
 
 .tShirt {
@@ -55,4 +55,44 @@ article {
     font-size: 1.65em;
     color: #07FBE0;
     font-weight: bold;
+}
+
+.nav {
+    background: #0DD7FF;
+    display: flex;
+}
+
+.nav__ul {}
+
+.nav__ul-li {
+    display: inline-block;
+    margin-left: 12em;
+    margin-top: 1em;
+    width: 10em;
+    height: 2.75em;
+}
+
+.nav__ul-li:hover>i {
+    font-size: 2em;
+    color: #000000;
+    transition: 1s;
+}
+
+.nav__ul-li:hover>a {
+    font-size: 2em;
+    color: #FF0000;
+    transition: 1s;
+    text-decoration: underline;
+}
+
+
+header nav div ul li i {
+    font-size: 1.5em;
+    color: #FF0000;
+}
+
+.nav__ul-li-a {
+    font-weight: bolder;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
 }
