@@ -1,12 +1,10 @@
 body {
     background: #A2A2A2;
 }
-
 article {
     background: #FFFFFF;
 }
-
-.tShirt {
+.tShirt__img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,83 +12,86 @@ article {
     margin-right: auto;
     object-fit: contain;
 }
-
 .tShirt img {
     max-width: 100%;
     height: auto;
 }
-
-.contenedorMayor {
-    height: auto;
-    width: auto;
-}
-
 .contenedorAB {
-    margin-left: 21em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedorAB__contenedorA {
+    display: inline-block;
+    margin-right: 10%;
 }
 
-.contenedorA {
+.contenedorAB__contenedorA__nombre {
     display: inline-block;
-    margin-left: 12.5em;
 }
-
-.contenedorB {
-    display: inline-block;
-    position: absolute;
-    margin-left: 1.6em;
-}
-
-.nombre {
-    font-size: 1.65em;
-    display: inline-block;
+.contenedorAB__contenedorA__nombre-a {
+    font-size: 1.3em;
     font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
-
-.descripcion {
+.contenedorAB__contenedorA__descripcion {
     font-size: 1em;
     color: #8E8E8E;
 }
-
-.precio {
-    font-size: 1.65em;
-    color: #07FBE0;
-    font-weight: bold;
+.contenedorAB__contenedorA__descripcion-a {
+    font-size: 1em;
+    color: #8E8E8E;
 }
-
+.contenedorAB__contenedorB {
+    display: inline-block;
+    position: absolute;
+    margin-left: 20%;
+}
+.contenedorAB__contenedorB__precio {  
+}
+.contenedorAB__contenedorB__precio-a {
+    font-size: 1.65em;
+    font-weight: bold;
+    color: #0DD7FF;
+}
 .nav {
     background: #0DD7FF;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
 }
-
-.nav__ul {}
-
+.nav__ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 .nav__ul-li {
     display: inline-block;
-    margin-left: 12em;
-    margin-top: 1em;
     width: 10em;
     height: 2.75em;
 }
-
 .nav__ul-li:hover>i {
     font-size: 2em;
     color: #000000;
     transition: 1s;
 }
-
 .nav__ul-li:hover>a {
     font-size: 2em;
     color: #FF0000;
     transition: 1s;
     text-decoration: underline;
 }
-
-
-header nav div ul li i {
+header nav ul li i {
     font-size: 1.5em;
     color: #FF0000;
 }
-
 .nav__ul-li-a {
     font-weight: bolder;
     font-size: 1.5em;

@@ -17,14 +17,12 @@
 </head>
 
 <header>
-    <nav>
-        <div class="nav">
-            <ul class="nav__ul">
-                <li class="nav__ul-li"> <i class="fa-solid fa-shirt"></i> <a class="nav__ul-li-a">T-Shirt</a></li>
-                <li class="nav__ul-li"> <i class="fa-solid fa-shoe-prints"></i> <a class="nav__ul-li-a">Shoes</a></li>
-                <li class="nav__ul-li"> <i class="fa-solid fa-filter"></i> <a class="nav__ul-li-a">Filters</a></li>
-            </ul>
-        </div>
+    <nav class="nav">
+        <ul class="nav__ul">
+            <li class="nav__ul-li"> <i class="fa-solid fa-shirt"></i> <a class="nav__ul-li-a">T-Shirt</a></li>
+            <li class="nav__ul-li"> <i class="fa-solid fa-shoe-prints"></i> <a class="nav__ul-li-a">Shoes</a></li>
+            <li class="nav__ul-li"> <i class="fa-solid fa-filter"></i> <a class="nav__ul-li-a">Filters</a></li>
+        </ul>
     </nav>
 </header>
 
@@ -32,24 +30,26 @@
     <main>
         <section>
             <article>
-                <div class="contenedorMayor">
-                    <div class="tShirt">
-                        <img src="./assets/img/t-shirt.png" alt="t-shirt">
-                    </div>
-                    <div class="contenedorAB">
-                        <div class="contenedorA">
-                            <div class="nombre"><a>Adidas Originals</a></div>
-                            <div class="descripcion"><a>Men's running shirt</a></div>
+                <div class="tShirt__img">
+                    <img src="./assets/img/t-shirt.png" alt="t-shirt">
+                </div>
+                <div class="contenedorAB">
+                    <div class="contenedorAB__contenedorA">
+                        <div class="contenedorAB__contenedorA__nombre"> 
+                            <a class="contenedorAB__contenedorA__nombre-a">Adidas Originals</a> 
                         </div>
-                        <div class="contenedorB">
-                            <div class="precio"><a>$39</a></div>
+                        <div class="contenedorAB__contenedorA__descripcion">
+                            <a class="contenedorAB__contenedorA__descripcion-a">Men's running shirt</a>
+                        </div>
+                    </div>
+                    <div class="contenedorAB__contenedorB">
+                        <div class="contenedorAB__contenedorB__precio">
+                            <a class="contenedorAB__contenedorB__precio-a">$39</a>
                         </div>
                     </div>
                 </div>
             </article>
         </section>
     </main>
-
 </body>
-
 </html>
