@@ -24,7 +24,7 @@ article {
 }
 .contenedorAB__contenedorA {
     display: inline-block;
-    margin-right: 10%;
+    margin-right: 6em;
 }
 
 .contenedorAB__contenedorA__nombre {
@@ -46,7 +46,7 @@ article {
 .contenedorAB__contenedorB {
     display: inline-block;
     position: absolute;
-    margin-left: 20%;
+    margin-left: 15em;
 }
 .contenedorAB__contenedorB__precio {  
 }
@@ -76,7 +76,11 @@ article {
     display: inline-block;
     width: 10em;
     height: 2.75em;
+    margin-top: .7em;
 }
+.nav__ul li:first-child {
+    margin-left: 1em;
+  }
 .nav__ul-li:hover>i {
     font-size: 2em;
     color: #000000;
