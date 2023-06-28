@@ -2,13 +2,11 @@ body {
     background: #000000;
     width: 100%;
 }
-
 article {
-    background: #666666;
+    background: #ffff;
     width: 100%;
     height: 100%;
 }
-
 .tShirt__img {
     display: flex;
     justify-content: center;
@@ -18,58 +16,45 @@ article {
     object-fit: contain;
     width: 100%;
 }
-
 .tShirt img {
     height: auto;
 }
-
 .contenedorNombrePrecio {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: red solid 4px;
 }
-
 .contenedorNombrePrecio__contenedorNombre {
     display: inline-block;
     margin-right: 6em;
-    border: black solid 4px;
 }
-
 .contenedorNombrePrecio__contenedorNombrePrecio__nombre {
     display: inline-block;
 }
-
 .contenedorNombrePrecio__contenedorNombre__nombre-a {
     font-size: 1.3em;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
-
 .contenedorNombrePrecio__contenedorNombre__descripcion {
     font-size: 1em;
     color: #8E8E8E;
 }
-
 .contenedorAB__contenedorA__descripcion-a {
     font-size: 1em;
     color: #8E8E8E;
 }
-
 .contenedorNombrePrecio__contenedorPrecio {
     display: inline-block;
     position: absolute;
     margin-left: 15em;
-    border: yellowgreen 4px solid;
 }
-
 .contenedorNombrePrecio__contenedorPrecio__precio-a {
     font-size: 1.65em;
     font-weight: bold;
     color: #0DD7FF;
 }
-
 .nav {
     background: #0DD7FF;
     display: flex;
@@ -78,7 +63,6 @@ article {
     padding: 0;
     margin: 0;
 }
-
 .nav__ul {
     padding: 0;
     margin: 0;
@@ -87,79 +71,81 @@ article {
     justify-content: space-between;
     width: 100%;
 }
-
 .nav__ul-li {
     display: inline-block;
     width: 10em;
     height: 2.75em;
     margin-top: .7em;
 }
-
 .nav__ul li:first-child {
     margin-left: 1em;
 }
-
 .nav__ul-li:hover>i {
     font-size: 2em;
     color: #000000;
     transition: 1s;
 }
-
 .nav__ul-li:hover>a {
     font-size: 2em;
     color: #FF0000;
     transition: 1s;
     text-decoration: underline;
 }
-
 header nav ul li i {
     font-size: 1.5em;
     color: #FF0000;
 }
-
 .nav__ul-li-a {
     font-weight: bolder;
     font-size: 1.5em;
     font-family: 'Montserrat', sans-serif;
 }
-
 .redes__ul {
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    justify-content: center;
+    width: 100%;
 }
 
-.redes__ul>li {
-    list-style-type: none;
-    width: 50px;
-}
+.redes__ul__li {
+    display: flex;
+margin: 0 2.5em 0 2.5em;
 
-.menu__responsive__ul {
-    display: none;
 }
 
 .fa-brands {
-    font-size: 30px;
-}
-
-.fa-facebook {
-    color: #3b5998;
+    display: inline-block;
+    font-size: 3em;
+    color: #E4405F;
 }
 
 .fa-instagram {
     color: #E4405F;
 }
-
-.fa-twitter {
-    color: #00acee;
+.fa-facebook {
+    color: #3b5998;
 }
-
-
+.fa-twitter {
+    color: #00acee;  
+}
+.redes__ul-li-instagram:hover {
+    font-size: 4em;
+    transition: 1s;
+}
+.redes__ul-li-facebook:hover {
+    font-size: 4em;
+    transition: 1s;
+}
+.redes__ul-li-twitter:hover {
+    font-size: 4em;
+    transition: 1s;
+}
+.menu__responsive__ul {
+    display: none;
+}
 @media only screen and (max-width: 400px) {
     .nav {
         display: none;
     }
-
     .menu__responsive__ul {
         display: inline-block;
         position: absolute;
@@ -168,29 +154,24 @@ header nav ul li i {
         padding-top: 27px;
         height: 37px;
     }
-
     .menu__responsive__li {
         width: 100%;
         padding: 5px 10px;
     }
-
     .menu__responsive__li i {
         color: #DC00FF;
         box-sizing: border-box;
         margin-right: 5px;
         width: 30px;
     }
-
     .menu__responsive__li a {
         text-decoration: none;
         color: #700081;
     }
-
     .menu__responsive-button {
         text-align: right;
         width: 100%;
     }
-
     .menu__responsive-button-container {
         position: absolute;
         width: 100%;
@@ -199,7 +180,6 @@ header nav ul li i {
         margin-top: -64px;
         z-index: 100;
     }
-
     .menu__responsive-container-li {
         position: relative;
         top: -1000px;
