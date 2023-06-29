@@ -1,5 +1,5 @@
 body {
-    background: #000000;
+    background: #fff;
     width: 100%;
 }
 article {
@@ -15,6 +15,7 @@ article {
     margin-right: auto;
     object-fit: contain;
     width: 100%;
+    margin: .7em 0 .7em 0;
 }
 .tShirt img {
     height: auto;
@@ -24,6 +25,7 @@ article {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: .5em 0 .5em 0;
 }
 .contenedorNombrePrecio__contenedorNombre {
     display: inline-block;
@@ -65,7 +67,7 @@ article {
 }
 .nav__ul {
     padding: 0;
-    margin: 0;
+    margin: .5em 0 .5em 0;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -116,6 +118,7 @@ margin: 0 2.5em 0 2.5em;
     display: inline-block;
     font-size: 3em;
     color: #E4405F;
+    margin: .5em 0 .5em 0;
 }
 
 .fa-instagram {
