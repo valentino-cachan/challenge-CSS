@@ -1,42 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./styles/necolas.github.io_normalize.css_8.0.1_normalize.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Raleway:ital,wght@1,300&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/5291a6015e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <header>
+        <nav>
+            <div class="nav">
+                <ul class="nav__ul">
+                    <li class="nav__ul-li"><i class="fa-solid fa-shirt"></i><a class="nav__ul-li-a">T-Shirt</a></li>
+                    <li class="nav__ul-li"><i class="fa-solid fa-shoe-prints"></i><a class="nav__ul-li-a">Shoes</a></li>
+                    <li class="nav__ul-li"><i class="fa-solid fa-filter"></i><a class="nav__ul-li-a">Filters</a></li>
+                </ul>
+            </div>
+            <ul class="menu__responsive__ul">
+                <div class="menu__responsive-button-container">
+                    <div class="menu__responsive-button fas fa-bars "></div>
+                </div>
+                <div class="menu__responsive-container-li">
+                    <li class="nav__ul-li"><i class="fa-solid fa-shirt"></i><a class="nav__ul-li-a">T-Shirt</a></li>
+                    <li class="nav__ul-li"><i class="fa-solid fa-shoe-prints"></i><a class="nav__ul-li-a">Shoes</a></li>
+                    <li class="nav__ul-li"><i class="fa-solid fa-filter"></i><a class="nav__ul-li-a">Filters</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section>
             <article>
-                <div class="contenedorMayor">
-                    <div class="tShirt">
-                        <img src="./assets/img/t-shirt.png" alt="t-shirt">
-                    </div>
-                    <div class="contenedorAB">
-                        <div class="contenedorA">
-                            <div class="nombre"><a>Adidas Originals</a></div>
-                            <div class="descripcion"><a>Men's running shirt</a></div>
+                <div class="tShirt__img">
+                    <img src="./assets/img/t-shirt.png" alt="t-shirt">
+                </div>
+                <div class="contenedorNombrePrecio">
+                    <div class="contenedorNombrePrecio__contenedorNombre">
+                        <div class="contenedorNombrePrecio__contenedorNombre__nombre">
+                            <a class="contenedorNombrePrecio__contenedorNombre__nombre-a">Adidas Originals</a>
                         </div>
-                        <div class="contenedorB">
-                            <div class="precio"><a>$39</a></div>
+                        <div class="contenedorNombrePrecio__contenedorNombre__descripcion">
+                            <a class="contenedorNombrePrecio__contenedorNombre__descripcion-a">Men's running shirt</a>
+                        </div>
+                    </div>
+                    <div class="contenedorNombrePrecio__contenedorPrecio">
+                        <div class="contenedorNombrePrecio__contenedorPrecio__precio">
+                            <a class="contenedorNombrePrecio__contenedorPrecio__precio-a">$39</a>
                         </div>
                     </div>
                 </div>
+                <ul class="redes__ul">
+                    <li class="redes__ul__li">
+                        <a href="https://www.instagram.com/adidas/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="redes__ul__li">
+                        <a href="https://www.facebook.com/adidasoriginals/ " target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="redes__ul__li">
+                        <a href="https://twitter.com/adidas" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
             </article>
         </section>
     </main>
-
 </body>
 
 </html>

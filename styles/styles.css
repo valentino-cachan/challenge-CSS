@@ -1,58 +1,201 @@
 body {
-    background: grey;
+    background: #fff;
+    width: 100%;
 }
-
 article {
-    background: white;
+    background: #ffff;
+    width: 100%;
+    height: 100%;
 }
-
-.tShirt {
+.tShirt__img {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
     object-fit: contain;
+    width: 100%;
+    margin: .7em 0 .7em 0;
 }
-
 .tShirt img {
-    max-width: 100%;
     height: auto;
 }
-
-.contenedorMayor {
-    height: auto;
-    width: auto;
+.contenedorNombrePrecio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5em 0 .5em 0;
 }
-
-.contenedorAB {
-    margin-left: 21em;
-}
-
-.contenedorA {
+.contenedorNombrePrecio__contenedorNombre {
     display: inline-block;
-    margin-left: 12.5em;
+    margin-right: 6em;
 }
-
-.contenedorB {
+.contenedorNombrePrecio__contenedorNombrePrecio__nombre {
     display: inline-block;
-    position: absolute;
-    margin-left: 1.6em;
 }
-
-.nombre {
-    font-size: 1.65em;
-    display: inline-block;
+.contenedorNombrePrecio__contenedorNombre__nombre-a {
+    font-size: 1.3em;
     font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
-
-.descripcion {
+.contenedorNombrePrecio__contenedorNombre__descripcion {
     font-size: 1em;
     color: #8E8E8E;
 }
-
-.precio {
+.contenedorAB__contenedorA__descripcion-a {
+    font-size: 1em;
+    color: #8E8E8E;
+}
+.contenedorNombrePrecio__contenedorPrecio {
+    display: inline-block;
+    position: absolute;
+    margin-left: 15em;
+}
+.contenedorNombrePrecio__contenedorPrecio__precio-a {
     font-size: 1.65em;
-    color: #07FBE0;
     font-weight: bold;
+    color: #0DD7FF;
+}
+.nav {
+    background: #0DD7FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.nav__ul {
+    padding: 0;
+    margin: .5em 0 .5em 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav__ul-li {
+    display: inline-block;
+    width: 10em;
+    height: 2.75em;
+    margin-top: .7em;
+}
+.nav__ul li:first-child {
+    margin-left: 1em;
+}
+.nav__ul-li:hover>i {
+    font-size: 2em;
+    color: #000000;
+    transition: 1s;
+}
+.nav__ul-li:hover>a {
+    font-size: 2em;
+    color: #FF0000;
+    transition: 1s;
+    text-decoration: underline;
+}
+header nav ul li i {
+    font-size: 1.5em;
+    color: #FF0000;
+}
+.nav__ul-li-a {
+    font-weight: bolder;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+.redes__ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.redes__ul__li {
+    display: flex;
+margin: 0 2.5em 0 2.5em;
+
+}
+
+.fa-brands {
+    display: inline-block;
+    font-size: 3em;
+    color: #E4405F;
+    margin: .5em 0 .5em 0;
+}
+
+.fa-instagram {
+    color: #E4405F;
+}
+.fa-facebook {
+    color: #3b5998;
+}
+.fa-twitter {
+    color: #00acee;  
+}
+.redes__ul-li-instagram:hover {
+    font-size: 4em;
+    transition: 1s;
+}
+.redes__ul-li-facebook:hover {
+    font-size: 4em;
+    transition: 1s;
+}
+.redes__ul-li-twitter:hover {
+    font-size: 4em;
+    transition: 1s;
+}
+.menu__responsive__ul {
+    display: none;
+}
+@media only screen and (max-width: 400px) {
+    .nav {
+        display: none;
+    }
+    .menu__responsive__ul {
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        margin-top: 37px;
+        padding-top: 27px;
+        height: 37px;
+    }
+    .menu__responsive__li {
+        width: 100%;
+        padding: 5px 10px;
+    }
+    .menu__responsive__li i {
+        color: #DC00FF;
+        box-sizing: border-box;
+        margin-right: 5px;
+        width: 30px;
+    }
+    .menu__responsive__li a {
+        text-decoration: none;
+        color: #700081;
+    }
+    .menu__responsive-button {
+        text-align: right;
+        width: 100%;
+    }
+    .menu__responsive-button-container {
+        position: absolute;
+        width: 100%;
+        font-size: 25px;
+        background: #0DD7FF;
+        margin-top: -64px;
+        z-index: 100;
+    }
+    .menu__responsive-container-li {
+        position: relative;
+        top: -1000px;
+        height: calc(100vh - 60px);
+        background: #ccc;
+        z-index: 1;
+        transition: all 1.2s;
+        width: 75%;
+        padding-top: 27px;
+    }
+
+    .menu__responsive__ul:hover>.menu__responsive-container-li {
+        top: -40px;
+        height: 15em;
+    }
 }
